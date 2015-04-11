@@ -6,7 +6,7 @@ eureka:
     fetchRegistry: true
 
 moji:
-  trackerAddresses: ${MOGILEFSD_PORT_7001_TCP_ADDR:mogilefsd}:${MOGILEFSD_PORT_7001_TCP_ADDR:7001}
+  trackerAddresses: ${MOGILEFSD_PORT_7001_TCP_ADDR:mogilefsd}:${MOGILEFSD_PORT_7001_TCP_PORT:7001}
   domain: sr-dev
 
 google:
