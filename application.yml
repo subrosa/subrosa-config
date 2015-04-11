@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: ${EUREKA_PORT_8761_TCP_ADDR:eureka}:${EUREKA_PORT_8761_TCP_ADDR:8761}
+    hostname: ${EUREKA_PORT_8761_TCP_ADDR:eureka}:${EUREKA_PORT_8761_TCP_PORT:8761}
   client:
     registerWithEureka: true
     fetchRegistry: true
