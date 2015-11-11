@@ -2,8 +2,8 @@ eureka:
   instance:
     hostname: ${EUREKA_PORT_8761_TCP_ADDR:eureka}:${EUREKA_PORT_8761_TCP_PORT:8761}
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false
+    fetchRegistry: false
 
 moji:
   trackerAddresses: ${MOGILEFSD_PORT_7001_TCP_ADDR:mogilefsd}:${MOGILEFSD_PORT_7001_TCP_PORT:7001}
@@ -33,9 +33,6 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     show-sql: true
-    properties:
-      javax.persistence.validation.group.pre-persist: com.subrosagames.subrosa.domain.game.validation.Always
-      javax.persistence.validation.group.pre-update: com.subrosagames.subrosa.domain.game.validation.Always
     hibernate:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       ddl-auto: validate
