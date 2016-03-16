@@ -25,7 +25,7 @@ facebook:
 
 spring:
   datasource:
-    url: jdbc:postgresql://${DB_PORT_5432_TCP_ADDR:postgres}:${DB_PORT_5432_TCP_PORT:5432}/engine
+    url: jdbc:postgresql://${DB_PORT_5432_TCP_ADDR:146.148.98.199}:${DB_PORT_5432_TCP_PORT:5432}/engine
     username: engine
     password: engine
     driver-class-name: org.postgresql.Driver
